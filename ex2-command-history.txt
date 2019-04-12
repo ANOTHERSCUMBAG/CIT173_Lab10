@@ -1,0 +1,1 @@
+    1  history > ~/CIT173_Lab10/ex2-command-history.txt

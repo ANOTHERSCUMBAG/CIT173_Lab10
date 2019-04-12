@@ -1,0 +1,50 @@
+Apr 11 19:19:04 localhost.localdomain PackageKit[32213]: search-file transaction /47_abcaeebd from uid 1000 finished with success after 2156ms
+Apr 11 19:19:14 localhost.localdomain PackageKit[32213]: search-file transaction /48_beeedebc from uid 1000 finished with success after 119ms
+Apr 11 19:19:25 localhost.localdomain PackageKit[32213]: search-file transaction /49_cdbacbcc from uid 1000 finished with success after 115ms
+Apr 11 19:20:18 localhost.localdomain PackageKit[32213]: search-file transaction /50_cdbdeded from uid 1000 finished with success after 114ms
+Apr 11 19:20:41 localhost.localdomain PackageKit[32213]: search-file transaction /51_ebdcdbdc from uid 1000 finished with success after 118ms
+Apr 11 19:23:35 localhost.localdomain dbus-daemon[718]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.602' (uid=0 pid=32340 comm="sudo journalctl " label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+Apr 11 19:23:35 localhost.localdomain systemd[1]: Starting Fingerprint Authentication Daemon...
+Apr 11 19:23:36 localhost.localdomain dbus-daemon[718]: [system] Successfully activated service 'net.reactivated.Fprint'
+Apr 11 19:23:36 localhost.localdomain systemd[1]: Started Fingerprint Authentication Daemon.
+Apr 11 19:23:36 localhost.localdomain audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:23:37 localhost.localdomain audit[32340]: USER_AUTH pid=32340 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_succeed_if,pam_localuser,pam_unix acct="dm" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain audit[32340]: USER_ACCT pid=32340 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="dm" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain sudo[32340]:       dm : TTY=pts/0 ; PWD=/home/dm ; USER=root ; COMMAND=/usr/bin/journalctl
+Apr 11 19:23:37 localhost.localdomain audit[32340]: USER_CMD pid=32340 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/dm" cmd="journalctl" terminal=pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain audit[32340]: CRED_REFR pid=32340 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain sudo[32340]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Apr 11 19:23:37 localhost.localdomain sudo[32340]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 11 19:23:37 localhost.localdomain audit[32340]: USER_START pid=32340 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain sudo[32340]: pam_unix(sudo:session): session closed for user root
+Apr 11 19:23:37 localhost.localdomain audit[32340]: USER_END pid=32340 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:23:37 localhost.localdomain audit[32340]: CRED_DISP pid=32340 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:24:06 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:25:38 localhost.localdomain dhclient[3510]: DHCPREQUEST on ens33 to 192.168.133.254 port 67 (xid=0x15b93d62)
+Apr 11 19:25:38 localhost.localdomain dhclient[3510]: DHCPACK from 192.168.133.254 (xid=0x15b93d62)
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6851] dhcp4 (ens33):   address 192.168.133.138
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6854] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6854] dhcp4 (ens33):   gateway 192.168.133.2
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6855] dhcp4 (ens33):   lease time 1800
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6855] dhcp4 (ens33):   nameserver '192.168.133.2'
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6855] dhcp4 (ens33):   domain name 'localdomain'
+Apr 11 19:25:38 localhost.localdomain NetworkManager[808]: <info>  [1555035938.6855] dhcp4 (ens33): state changed bound -> bound
+Apr 11 19:25:38 localhost.localdomain dbus-daemon[718]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.17' (uid=0 pid=808 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Apr 11 19:25:38 localhost.localdomain systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr 11 19:25:38 localhost.localdomain dhclient[3510]: bound to 192.168.133.138 -- renewal in 796 seconds.
+Apr 11 19:25:38 localhost.localdomain dbus-daemon[718]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr 11 19:25:38 localhost.localdomain systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr 11 19:25:38 localhost.localdomain audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:25:38 localhost.localdomain nm-dispatcher[32386]: req:1 'dhcp4-change' [ens33]: new request (3 scripts)
+Apr 11 19:25:38 localhost.localdomain nm-dispatcher[32386]: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Apr 11 19:25:47 localhost.localdomain PackageKit[32213]: daemon quit
+Apr 11 19:25:47 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:25:49 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:26:46 localhost.localdomain logger[32401]:  HELP iVE fallen and I cant get up
+Apr 11 19:28:15 localhost.localdomain audit[32443]: USER_ACCT pid=32443 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="dm" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:28:15 localhost.localdomain sudo[32443]:       dm : TTY=pts/0 ; PWD=/home/dm ; USER=root ; COMMAND=/usr/bin/journalctl
+Apr 11 19:28:15 localhost.localdomain audit[32443]: USER_CMD pid=32443 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/dm" cmd="journalctl" terminal=pts/0 res=success'
+Apr 11 19:28:15 localhost.localdomain audit[32443]: CRED_REFR pid=32443 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 19:28:15 localhost.localdomain sudo[32443]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Apr 11 19:28:15 localhost.localdomain sudo[32443]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 11 19:28:15 localhost.localdomain audit[32443]: USER_START pid=32443 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'

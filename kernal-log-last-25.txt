@@ -1,0 +1,25 @@
+Apr 11 18:59:10 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=man-db-cache-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:10 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=man-db-cache-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:10 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=run-r7ffb786c35f24d1a9e6a8c5c62565a84 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:10 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=run-r7ffb786c35f24d1a9e6a8c5c62565a84 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:13 localhost audit[30422]: USER_AUTH pid=30422 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_succeed_if,pam_localuser,pam_unix acct="dm" exe="/usr/lib/polkit-1/polkit-agent-helper-1" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:13 localhost audit[30422]: USER_ACCT pid=30422 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="dm" exe="/usr/lib/polkit-1/polkit-agent-helper-1" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:14 localhost systemd[1]: Reloading.
+Apr 11 18:59:39 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:59:39 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:00:07 localhost dbus-daemon[718]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.560' (uid=0 pid=32003 comm="/usr/lib/polkit-1/polkit-agent-helper-1 dm " label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+Apr 11 19:00:07 localhost systemd[1]: Starting Fingerprint Authentication Daemon...
+Apr 11 19:00:07 localhost dbus-daemon[718]: [system] Successfully activated service 'net.reactivated.Fprint'
+Apr 11 19:00:07 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:00:07 localhost systemd[1]: Started Fingerprint Authentication Daemon.
+Apr 11 19:00:08 localhost audit[32003]: USER_AUTH pid=32003 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_succeed_if,pam_localuser,pam_unix acct="dm" exe="/usr/lib/polkit-1/polkit-agent-helper-1" hostname=? addr=? terminal=? res=success'
+Apr 11 19:00:08 localhost audit[32003]: USER_ACCT pid=32003 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="dm" exe="/usr/lib/polkit-1/polkit-agent-helper-1" hostname=? addr=? terminal=? res=success'
+Apr 11 19:00:08 localhost systemd[1]: Starting System Logging Service...
+Apr 11 19:00:08 localhost rsyslogd[32011]: [origin software="rsyslogd" swVersion="8.39.0" x-pid="32011" x-info="http://www.rsyslog.com"] start
+Apr 11 19:00:08 localhost rsyslogd[32011]: imjournal: No statefile exists, /var/lib/rsyslog/imjournal.state will be created (ignore if this is first run): No such file or directory [v8.39.0 try http://www.rsyslog.com/e/2040 ]
+Apr 11 19:00:08 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:00:08 localhost systemd[1]: Started System Logging Service.
+Apr 11 19:00:37 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:01:47 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:01:47 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 19:02:37 localhost cupsd[860]: REQUEST localhost - - "POST / HTTP/1.1" 200 181 Renew-Subscription client-error-not-found
